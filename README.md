@@ -11,13 +11,19 @@ Repository with Java exercises and small projects, organized by topic.
 ## 📂 Repository Structure
 
 - **Arrays/** – Exercises involving arrays and array manipulation
-  - [🪐 Exercise1PrintArray.java](Arrays/Exercise1PrintArray.java) – Print all elements of an array
-  - [🪐 Exercise2ArraySum.java](Arrays/Exercise2ArraySum.java) – Calculate sum of array elements
-  - [🪐 Exercise3LargestNumber](Arrays/Exercise3LargestNumber.java) – Find largest number in an array
-  - [🪐 Exercise4CountEvenNumbers.java](Arrays/Exercise4CountEvenNumbers.java) – Count even numbers in an array
-  - [🪐 Exercise5ArrayAverage](Arrays/Exercise5ArrayAverage.java) – Calculate the average of array elements
-  - [🪐 Exercise6GreaterThan10.java](Arrays/Exercise6GreaterThan10.java) – Count numbers greater than 10
-  - [🪐 Exercise7ReverseArray.java](Arrays/Exercise7ReverseArray.java) – Reverse the order of the original array
+  - [`🪐 Exercise1PrintArray.java`](Arrays/Exercise1PrintArray.java) – Print all elements of an array
+    
+  - [`🪐 Exercise2ArraySum.java`](Arrays/Exercise2ArraySum.java) – Calculate sum of array elements
+    
+  - [`🪐 Exercise3LargestNumber.java`](Arrays/Exercise3LargestNumber.java) – Find largest number in an array
+    
+  - [`🪐 Exercise4CountEvenNumbers.java`](Arrays/Exercise4CountEvenNumbers.java) – Count even numbers in an array
+    
+  - [`🪐 Exercise5ArrayAverage.java`](Arrays/Exercise5ArrayAverage.java) – Calculate the average of array elements
+    
+  - [`🪐 Exercise6GreaterThan10.java`](Arrays/Exercise6GreaterThan10.java) – Count numbers greater than 10
+    
+  - [`🪐 Exercise7ReverseArray.java`](Arrays/Exercise7ReverseArray.java) – Reverse the order of the original array
 
 <br>
 
