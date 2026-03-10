@@ -28,7 +28,16 @@ Repository with Java exercises and small projects, organized by topic.
 <br>
 
 - **Conditionals/** – Exercises practicing decision-making with `if-else` and `switch-case`  
-  *Coming Soon*
+  - [`🪐 Exercise1TriangleType.java`](Conditionals/Exercise1TriangleType.java) – *Determine the type of a triangle based on its side lengths*
+
+  - [`🪐 Exercise2GradeEvaluator.java`](Conditionals/Exercise2GradeEvaluator.java) – *Read three grades of a student and calculate the average*
+
+  - [`🪐 Exercise3StrongPassword.java`](Conditionals/Exercise3StrongPassword.java) – *Read a password and check if it is strong.*  
+ 
+  - [`🪐 Exercise4TemperatureConverter`](Conditionals/Exercise4TemperatureConverter.java) – *Read a temperature and a scale (Celsius or Fahrenheit). Convert it to the other scale.*
+  - [`🪐 Exercise5GuessTheNumber`](Conditionals/Exercise5GuessTheNumber.java) – *The program picks a random number between 1 and 20. The user tries to guess it.* 
+ 
+  
 
 <br>
   
