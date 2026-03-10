@@ -4,7 +4,6 @@ by morgannaLabs - https://github.com/morgannaLabs
 */
 
 public class Exercise3LargestNumber {
-	
 	public static void main (String [] args) {
 
 		int [] array = new int [5];
@@ -22,11 +21,7 @@ public class Exercise3LargestNumber {
 				
 				largest = value;
 			}
-			
 		}
-		
 		System.out.println("The largest number is: " + largest);
-		
 	}
-
 }
