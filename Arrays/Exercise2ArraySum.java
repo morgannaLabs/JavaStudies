@@ -1,18 +1,9 @@
 /** Exercise 2 — Sum of Array Elements
-
-Create an array with five integers.
-Print each element and calculate the sum of all values in the array.
-
-by morgannaLabs
-https://github.com/morgannaLabs
-
+Create an array with five integers. Print each element and calculate the sum of all values in the array.
+by morgannaLabs - https://github.com/morgannaLabs
 */
 
-
 public class Exercise2ArraySum {
-	
-	
-	
 	public static void main(String[] args) {
 		
 		int sum = 0;
@@ -31,8 +22,5 @@ public class Exercise2ArraySum {
 		
 		System.out.println("The result of the sum is : " + sum);
 	}
-
-
-
 }
 
