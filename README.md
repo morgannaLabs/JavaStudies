@@ -11,7 +11,7 @@ Repository with Java exercises and small projects, organized by topic.
 ## 📂 Repository Structure
 
 - **Arrays/** – Exercises involving arrays and array manipulation
-  - `💠 Exercise1PrintArray.java` – Print all elements of an array  
+  - [💠 Exercise1PrintArray.java](Arrays/Exercise1PrintArray.java) – Print all elements of an array
   - `💠 Exercise2ArraySum.java` – Calculate sum of array elements
   - `💠 Exercise3LargestNumber.java` – Find largest number in an array
   - `💠 Exercise4CountEvenNumbers.java` – Count even numbers in an array
