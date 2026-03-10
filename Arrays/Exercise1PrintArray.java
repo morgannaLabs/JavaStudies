@@ -4,7 +4,6 @@ by morgannaLabs - https://github.com/morgannaLabs
 */
 
 public class Exercise1PrintArray {
-
 	public static void main(String[] args) {
 		
 		int [] array = new int[5];
