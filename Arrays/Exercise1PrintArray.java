@@ -17,7 +17,5 @@ public class Exercise1PrintArray {
 		for (int value : array) {
 			System.out.println(value);
 		}
-
 	}
-
 }
