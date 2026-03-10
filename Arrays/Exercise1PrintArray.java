@@ -1,10 +1,6 @@
 /** Exercise 1 — Print Array Elements
-
 Create an array with five integers and print all elements using a for-each loop.
-
-by morgannaLabs
-https://github.com/morgannaLabs
-
+by morgannaLabs - https://github.com/morgannaLabs
 */
 
 public class Exercise1PrintArray {
