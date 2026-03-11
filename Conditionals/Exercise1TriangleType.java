@@ -13,6 +13,7 @@ public class Exercise1TriangleType {
     
     static Scanner scanner = new Scanner (System.in);
     static double aSide, bSide, cSide;
+    static boolean isValid;
     
 	public static void main(String[] args) {
 	    getSides();
@@ -20,13 +21,13 @@ public class Exercise1TriangleType {
 	}
 	
 	public static void getSides() {
-	    System.out.println("Inform the first side of the triangle");
+	    System.out.println("Inform the first side of the triangle: ");
 	    aSide = scanner.nextDouble();
 	    
-	    System.out.println("Inform the second side of the triangle");
+	    System.out.println("Inform the second side of the triangle: ");
 	    bSide = scanner.nextDouble();
 	    
-	    System.out.println("Inform the third side of the triangle");
+	    System.out.println("Inform the third side of the triangle: ");
 	    cSide = scanner.nextDouble();
 	    
 	    scanner.close();
@@ -35,5 +36,27 @@ public class Exercise1TriangleType {
 	public static void showValues() {
 	    System.out.println(aSide + ", " + bSide + ", " + cSide);
 	}
+	
+	public static boolean validateTriangle () {
+	    if ((aSide + bSide > cSide) || (aSide + cSide > bSide) || (bSide + cSide > aSide)) {
+	    	isValid = true;
+	}
+	    else {
+	    	isValid = false;
+	    }
+	    
+	    return isValid;
 
+	}
+	
+	public static String calculateType () {
+		
+		if (aSide == bSide && bSide == cSide) {
+			System.out.println("Equilateral Triangle");
+		}
+		
+		return null;
+		
+	}
+	
 }
