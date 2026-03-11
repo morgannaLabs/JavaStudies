@@ -7,11 +7,33 @@
  */
 
 
+import java.util.Scanner;
+
 public class Exercise1TriangleType {
-
+    
+    static Scanner scanner = new Scanner (System.in);
+    static double aSide, bSide, cSide;
+    
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	    getSides();
+	    showValues();
+	}
+	
+	public static void getSides() {
+	    System.out.println("Inform the first side of the triangle");
+	    aSide = scanner.nextDouble();
+	    
+	    System.out.println("Inform the second side of the triangle");
+	    bSide = scanner.nextDouble();
+	    
+	    System.out.println("Inform the third side of the triangle");
+	    cSide = scanner.nextDouble();
+	    
+	    scanner.close();
+	}
+	
+	public static void showValues() {
+	    System.out.println(aSide + ", " + bSide + ", " + cSide);
 	}
 
 }
