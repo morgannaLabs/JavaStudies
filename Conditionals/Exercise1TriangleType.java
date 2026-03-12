@@ -34,8 +34,8 @@ public class Exercise1TriangleType {
 	}
 	
 	public static void showValues() {
-	    System.out.println(aSide + ", " + bSide + ", " + cSide);
-	}
+	    System.out.println("Values: " + aSide + ", " + bSide + ", " + cSide);
+	} 
 	
 	public static boolean validateTriangle () {
 	    if ((aSide + bSide > cSide) || (aSide + cSide > bSide) || (bSide + cSide > aSide)) {
