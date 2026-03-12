@@ -6,21 +6,27 @@
  by morgannaLabs - https://github.com/morgannaLabs
  */
 
-
+// ===== IMPORT  =====
 import java.util.Scanner;
 
 public class Exercise1TriangleType {
 
-	// ===== ATTRIBUTES =====
+	// ===== CLASS ATTRIBUTES =====
     static Scanner scanner = new Scanner (System.in);
     static double aSide, bSide, cSide;
     static boolean isValid;
 
-	// ===== MAIN PROGRAM FLOW =====
+	// ===== MAIN  =====
 	public static void main(String[] args) {
-	    getSides();
-	    showValues();
-	}
+		while (!isValid) {
+			getSides();
+		    isValid = validateTriangle();
+		}
+		
+		calculateType();
+		showValues();
+		scanner.close();
+	} // end main
 
 	// ===== INPUT =====
 	public static void getSides() {
@@ -33,19 +39,22 @@ public class Exercise1TriangleType {
 	    System.out.println("Inform the third side of the triangle: ");
 	    cSide = scanner.nextDouble();
 	    
-	    scanner.close();
+	    
 	}
 
 	// ===== OUTPUT =====
 	public static void showValues() {
 	    System.out.println("Values: " + aSide + ", " + bSide + ", " + cSide);
 	} 
+
 	
+	// ===== TRIANGLE VALIDATION =====
 	public static boolean validateTriangle () {
-	    if ((aSide + bSide > cSide) || (aSide + cSide > bSide) || (bSide + cSide > aSide)) {
+	    if ((aSide + bSide > cSide) && (aSide + cSide > bSide) && (bSide + cSide > aSide)) {
 	    	isValid = true;
 	}
 	    else {
+	    	System.out.println("Invalid Triangle! Try Again!");
 	    	isValid = false;
 	    }
 	    
@@ -53,13 +62,22 @@ public class Exercise1TriangleType {
 
 	}
 	
-	public static String calculateType () {
+	// ===== TRIANGLE TYPE CLASSIFICATION  =====
+	public static void calculateType () {
 		
 		if (aSide == bSide && bSide == cSide) {
 			System.out.println("Equilateral Triangle");
 		}
 		
-		return null;
+		else if ((aSide == bSide) || (aSide == cSide) || (bSide == cSide)) {
+			System.out.println("Isosceles Triangle");
+		}
+		
+		else {
+			System.out.println("Scalene Triangle");
+		}
+
+		
 		
 	}
 	
