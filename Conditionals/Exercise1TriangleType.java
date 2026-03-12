@@ -10,16 +10,19 @@
 import java.util.Scanner;
 
 public class Exercise1TriangleType {
-    
+
+	// ===== ATTRIBUTES =====
     static Scanner scanner = new Scanner (System.in);
     static double aSide, bSide, cSide;
     static boolean isValid;
-    
+
+	// ===== MAIN PROGRAM FLOW =====
 	public static void main(String[] args) {
 	    getSides();
 	    showValues();
 	}
-	
+
+	// ===== INPUT =====
 	public static void getSides() {
 	    System.out.println("Inform the first side of the triangle: ");
 	    aSide = scanner.nextDouble();
@@ -32,7 +35,8 @@ public class Exercise1TriangleType {
 	    
 	    scanner.close();
 	}
-	
+
+	// ===== OUTPUT =====
 	public static void showValues() {
 	    System.out.println("Values: " + aSide + ", " + bSide + ", " + cSide);
 	} 
