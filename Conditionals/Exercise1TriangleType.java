@@ -14,32 +14,50 @@ public class Exercise1TriangleType {
 	// ===== CLASS ATTRIBUTES =====
     static Scanner scanner = new Scanner (System.in);
     static double aSide, bSide, cSide;
-    static boolean isValid;
 
-	// ===== MAIN  =====
-	public static void main(String[] args) {
-		while (!isValid) {
-			getSides();
-		    isValid = validateTriangle();
-		}
-		
-		calculateType();
-		showValues();
-		scanner.close();
-	} // end main
+	// ===== MAIN  METHOD =====
+	
+    public static void main(String[] args) {
+
+        while (true) {
+
+            aSide = getSides(1);
+            bSide = getSides(2);
+            cSide = getSides(3);
+
+            if (validateTriangle()) {
+                break; 
+            }
+        }
+
+        calculateType();
+        showValues();
+        scanner.close();
+    }
 
 	// ===== INPUT =====
-	public static void getSides() {
-	    System.out.println("Inform the first side of the triangle: ");
-	    aSide = scanner.nextDouble();
-	    
-	    System.out.println("Inform the second side of the triangle: ");
-	    bSide = scanner.nextDouble();
-	    
-	    System.out.println("Inform the third side of the triangle: ");
-	    cSide = scanner.nextDouble();
-	    
-	    
+	
+	public static double getSides(int counter) {
+
+	    while (true) {
+	        try {
+	            System.out.println("Inform the " + counter + "º side of the triangle: ");
+	            
+	            double value = scanner.nextDouble();
+	            
+	            if (value <= 0) {
+	                System.out.println("The side must be greater than zero!");
+	                continue; 
+	            }
+	            
+	            return value;
+
+	        } catch (Exception e) {
+	            System.out.println("Invalid input! Please enter a numeric value.");
+
+	            scanner.nextLine(); 
+	        }
+	    }
 	}
 
 	// ===== OUTPUT =====
@@ -50,15 +68,16 @@ public class Exercise1TriangleType {
 	
 	// ===== TRIANGLE VALIDATION =====
 	public static boolean validateTriangle () {
+		
+		
 	    if ((aSide + bSide > cSide) && (aSide + cSide > bSide) && (bSide + cSide > aSide)) {
-	    	isValid = true;
+	    	return true;
 	}
 	    else {
 	    	System.out.println("Invalid Triangle! Try Again!");
-	    	isValid = false;
+	    	return false;
 	    }
 	    
-	    return isValid;
 
 	}
 	
@@ -76,9 +95,6 @@ public class Exercise1TriangleType {
 		else {
 			System.out.println("Scalene Triangle");
 		}
-
-		
-		
 	}
 	
 }
