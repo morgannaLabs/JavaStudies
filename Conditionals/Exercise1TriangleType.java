@@ -1,7 +1,7 @@
 /** Exercise 1 — Triangle Type Identifier
  
  Given three sides of a triangle, determine if it is equilateral, isosceles, or scalene. 
- Also, make sure the sides can actually form a triangle (the sum of any two sides must be greater than the third). 
+ Also, ensure the sides can actually form a triangle (the sum of any two sides must be greater than the third). 
  
  by morgannaLabs - https://github.com/morgannaLabs
  */
@@ -12,7 +12,7 @@ import java.util.Scanner; // Imports Scanner to read user input
 public class Exercise1TriangleType {
 
 	// ===== CLASS ATTRIBUTES =====
-    static Scanner scanner = new Scanner (System.in); // Scanner object to rea user input
+    static Scanner scanner = new Scanner (System.in); // Scanner object to read user input
     static double aSide, bSide, cSide; // variables to store the triangle sides
 
 	// ===== MAIN  METHOD =====
