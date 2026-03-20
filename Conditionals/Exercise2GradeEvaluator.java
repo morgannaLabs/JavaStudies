@@ -30,6 +30,12 @@ public class Exercise2GradeEvaluator {
 		
 		try {
 		double grade = Double.parseDouble(JOptionPane.showInputDialog("Inform the " + counter + "º grade"));
+		
+		if (grade > 10 || grade < 0) {
+			JOptionPane.showMessageDialog(null, "Invalid Grade! Only Numbers between 0 and 10! Try Again!");
+			continue;
+		}
+		
 		return grade;
 		
 		}
